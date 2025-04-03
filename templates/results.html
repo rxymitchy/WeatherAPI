@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="min-h-screen bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-2xl font-bold text-gray-800">Weather in {{ city }}</h1>
+                    <img src="http://openweathermap.org/img/wn/{{ icon }}@2x.png" alt="Weather icon">
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-temperature-three-quarters text-blue-500 mr-2"></i>
+                        <span class="text-gray-700">Temperature: {{ temp }}°C</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-cloud text-blue-500 mr-2"></i>
+                        <span class="text-gray-700">Conditions: {{ description }}</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-tint text-blue-500 mr-2"></i>
+                        <span class="text-gray-700">Humidity: {{ humidity }}%</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-wind text-blue-500 mr-2"></i>
+                        <span class="text-gray-700">Wind Speed: {{ wind }} m/s</span>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <a href="/" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <i class="fas fa-arrow-left mr-2"></i> Search Again
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
