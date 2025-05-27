@@ -11,7 +11,7 @@ A Flask-based weather application with real-time data from OpenWeatherMap API.
 ## Quick Start
 1. Clone repo:
 ```bash
-git clone https://github.com/rxymitchy/blackboxai-1743645640994.git
+git clone https://github.com/rxymitchy/WeatherAPI.git
 ```
 2. Install dependencies:
 ```bash
